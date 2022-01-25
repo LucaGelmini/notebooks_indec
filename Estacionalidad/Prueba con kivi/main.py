@@ -1,17 +1,19 @@
 import kivy
-
 kivy.require('2.0.0')
 
-# base Class of your App inherits from the App class.
 from kivy.app import App
-# GridLayout arranges children in a matrix.
 from kivy.uix.boxlayout import BoxLayout
+'''
+from kivy.config import Config
+Config.set('graphics', 'witdth', 400)
+Config.set('graphics', 'height', 400)
+'''
 
 class Contenedor_01(BoxLayout):
     None
 
-class MainApp():
-    title = "Hola Mundo"
+class MainApp(App):
+    title = 'Hola Mundo'
     def build(self):
         return Contenedor_01()
 
